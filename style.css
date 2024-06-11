@@ -2,14 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: montserrat,  sans-serif, times new roman, open sans,  segoe ui;
 }
 html, body{
     height: 100%;
     width: 100%;
 }
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.39);
+}
 #page1{
     height: 100vh;
     width: 100%;
+    position: relative;
+    /* background-color: rgb(213, 129, 129); */
+
 }
 nav{
     height: 8.5vw;
@@ -17,8 +25,11 @@ nav{
     /* background-color: red; */
     display: flex;
     align-items: center;
-    padding: 3vw 5vw;
+    padding: 5vw 8.5vw;
     gap: 2vw;
+    position: fixed;
+    color: white;
+    z-index: 99;
 }
 #nav img{
     height: 9vw;
@@ -26,4 +37,40 @@ nav{
 }
 #nav h4{
     text-transform: uppercase;
+    font-weight: 500;
+}
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+  }
+#page1-content{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page1-content h1{
+    font-size: 7vw;
+    text-wrap: nowrap;
+    font-weight: 800;
+}
+#page1-content h3{
+    font-size: 1.8vw;
+    text-wrap: nowrap;
+    font-weight: 800;
+    margin-top: 1.5vw;
+}
+#page1-content h5{
+    font-size: 1.5vw;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    margin-top: 2vw;
+    line-height: 2vw;
 }

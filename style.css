@@ -16,6 +16,7 @@ html, body{
     height: 100vh;
     width: 100%;
     position: relative;
+    z-index: 10;
 }
 nav{
     height: 8.5vw;
@@ -86,4 +87,25 @@ video {
     height: 100vh;
     width: 100%;
     position: relative;
+    z-index: 10;
+}
+/*CURSOR*/
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    /* transition: all linear 0.2s; */
+}
+#cursor-blur{
+    height: 200px;
+    width: 200px;
+    background-color: #96c11e83;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    filter: blur(60px);
+    /* transition: all linear 0.2s; */
 }

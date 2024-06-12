@@ -83,12 +83,6 @@ video {
     margin-top: 1vw;
     line-height: 2vw;
 }
-#page2{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: 10;
-}
 /*CURSOR*/
 #cursor{
     height: 25px;
@@ -108,4 +102,39 @@ video {
     z-index: 9;
     filter: blur(60px);
     /* transition: all linear 0.2s; */
+}
+/*PAGE 2*/
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+#scroller-container{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.234); */
+    color: white;
+    white-space: nowrap;   /*MISTAKE*/
+    font-size: 7vw;
+    overflow-x: auto;
+    overflow-y:hidden ;
+}
+#scroller-1{
+    display: inline-block;
+    white-space: nowrap;
+}
+#scroller-1 h4{
+    display: inline-block;
+    -webkit-text-stroke: 2px #95C11E;
+    color: transparent;
+}
+#scroller-2{
+    display: inline-block;
+    white-space: nowrap;
+}
+#scroller-2 h4{
+    display: inline-block;
+    -webkit-text-stroke: 2px #95C11E;
+    color: transparent;
 }

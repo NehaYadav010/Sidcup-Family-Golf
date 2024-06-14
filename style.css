@@ -91,7 +91,7 @@ video {
     border-radius: 50%;
     position: fixed;
     z-index: 99;
-    /* transition: all linear 0.2s; */
+    transition: all ease linear 0.2s;
 }
 #cursor-blur{
     height: 200px;
@@ -101,7 +101,7 @@ video {
     position: fixed;
     z-index: 9;
     filter: blur(60px);
-    transition: all linear 0.4s;
+    transition: all ease linear 0.2s;
 }
 /*PAGE 2*/
 #page2{
@@ -114,7 +114,6 @@ video {
 #scroller-container{
     height: 50%;
     width: 100%;
-    background-color: red;
     color: white;
     white-space: nowrap;   /*ADD THIS*/
     font-size: 7vw;
@@ -155,3 +154,38 @@ video {
     }
 }
 /*SCROLLER TEXT ENDED*/
+/*ABOUT US START*/
+#about-us{
+    height:70vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 6vw 4vw;
+    color: #fff;
+    /* background-color: rgb(217, 124, 124); */
+}
+#about-us h1 {
+    font-weight: 900;
+}
+#about-us p{
+    margin-top: 2.5vw;
+    width: 80%;
+    font-size: 1.2vw;
+}
+#img1{
+    height: 40vh;
+    width: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+#img2{
+    height: 50vh;
+    width: 35vh;
+    object-fit: cover;
+    object-position: center;
+}
+#abt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

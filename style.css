@@ -188,3 +188,63 @@ video {
     text-align: center;
     width: 50%;
 }
+/*ABOUT US ENDS*/
+/*CARDS START*/
+#cards{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+    position: relative;
+    z-index: 10;
+    background-color: red;
+}
+/* #cards img{
+    height:65%;
+    width: 30%;
+    border-radius: 1vw;
+    object-fit: cover;
+    object-position: center;
+    gap: 1.5vw;
+} */
+.card{
+    height:65%;
+    width: 30%;
+    border-radius: 1vw;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all ease 0.2s;
+}
+#card1{
+    background-image: url(https://images.unsplash.com/photo-1718046881147-0e3b12ec35f3?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#card2{
+    background-image: url(https://images.unsplash.com/photo-1718112131885-8089da6ebd46?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#card3{
+    background-image: url(https://images.unsplash.com/photo-1718227695331-eb3ef0e53c66?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding-top: 8vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.overlay h4{
+    font-size: 1.8vw;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+}

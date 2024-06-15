@@ -62,3 +62,34 @@ cards.forEach(function(elem){
         crs.style.border = "none";
     })
 })
+// ABOUT US GSAP ANIMATION
+
+gsap.from("#about-us img,#abt",{
+    y:60,
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#about-us",
+        scroller:"body",
+        markers: true,
+        start:"top 60%",
+        end:"top 58%",
+        scrub:3
+    }
+})
+// CARDS GSAP ANIMATION
+
+gsap.from(".card",{
+    scale:0.8,
+    duration:1,
+    opacity:0,
+    // stagger: 2,
+    scrollTrigger:{
+        trigger:".card",
+        scroller:"body",
+        markers: true,
+        start:"top 70%",
+        end:"top 58%",
+        scrub:3
+    }
+})

@@ -27,8 +27,38 @@ gsap.to("#main",{
 var crs = document.querySelector("#cursor");
 var crsrblr = document.querySelector("#cursor-blur");
 document.addEventListener("mousemove",function(dets){
-    crs.style.left = dets.x + "px"
+    crs.style.left = dets.x+20 + "px"  //jab cursor aur div takra rahe ho tab add kardo taki thoda dur rahe
     crs.style.top = dets.y + "px"
     crsrblr.style.left = dets.x - 150 + "px"
     crsrblr.style.top = dets.y - 150 + "px"
+})
+
+// NAVIGATION ANIMATION OF CURSOR
+var h4 = document.querySelectorAll("nav h4");
+h4.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        crs.style.scale = 2;
+        crs.style.backgroundColor = "transparent";
+        crs.style.border = "1px solid white";
+    })
+    elem.addEventListener("mouseleave",function(){
+        crs.style.scale = 1;
+        crs.style.backgroundColor = "#95C11E";
+        crs.style.border = "none";
+    })
+})
+
+// CURSOR ANIMATION ON CARDS
+var cards = document.querySelectorAll(".card")
+cards.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        crs.style.scale = 2;
+        crs.style.backgroundColor = "transparent";
+        crs.style.border = "1px solid #fff"
+    });
+    elem.addEventListener("mouseleave",function(){
+        crs.style.scale = 1;
+        crs.style.backgroundColor = "#95C11E";
+        crs.style.border = "none";
+    })
 })

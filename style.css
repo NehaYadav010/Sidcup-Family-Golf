@@ -100,8 +100,8 @@ video {
     border-radius: 50%;
     position: fixed;
     z-index: 9;
-    filter: blur(60px);
-    transition: all ease linear 3s;
+    filter: blur(45px);
+    transition: all ease linear 10s;
 }
 /*PAGE 2*/
 #page2{
@@ -228,6 +228,7 @@ video {
 #card3{
     background-image: url(https://images.unsplash.com/photo-1718227695331-eb3ef0e53c66?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
+
 .overlay{
     height: 100%;
     width: 100%;
@@ -250,16 +251,27 @@ video {
     transform: rotate3d(-1,1,0,20deg);
 }
 #band{
-    height: 40vh;
+    height: 45vh;
     width: 100%;
-    background: linear-gradient(#2AA635,#ABDE23);
+    background: linear-gradient(to left bottom,#2AA635,#ABDE23);
+    display: flex;
+    justify-content: space-between;
 }
 #band h1{
     font-weight: 800;
     text-align: center;
-    padding-top: 3.5vw;
-    line-height: 0.2vw;
-    font-size: 2.3vw;
+    line-height: 3vw;
+    position: relative;
+    top: 25%;
+    font-size: 2vw;
+}
+#band img{
+    height: 100%;
+    width: 13%;
+    object-fit: cover;
+}
+#band #img1{
+    transform: rotateX(180deg) rotateY(180deg);
 }
 #chalo{
     width: 100%;

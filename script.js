@@ -118,3 +118,14 @@ gsap.from("#colon2",{
         scrub:4
     }
 })
+// GSAP FOR H1 IN LABEL PART
+gsap.from("#labels h1",{
+    y:60,
+    scrollTrigger:{
+        trigger:"#labels h1",
+        scroller:"body",
+        start: "top 90%",
+        end: "top 75%",
+        scrub:3
+    }
+})

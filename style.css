@@ -309,7 +309,7 @@ video {
 }
 /*LABEL START*/
 #page4{
-    min-height: 100vh;
+    height: 65vh;
     width: 100%;
     position: relative;
 }
@@ -377,5 +377,47 @@ video {
 .label:hover img{
     scale: 1;
 }
-
 /*LABEL END*/
+/*FOOTER START*/
+#footer{
+    height: 63vh;
+    width: 100%;
+    background: linear-gradient(to left bottom,#2AA635,#ABDE23);
+    display: flex;
+    gap: 2vw;
+    padding: 4vw;
+}
+/* #footer img{
+    height: 30%;
+    width: 30%;
+    object-fit: cover;
+    position: relative;
+    z-index: 9;
+} */
+.foot{
+    height: 70%;
+    width: 100%;
+    background-color: orange;
+    padding: 1vw;
+    position: relative;
+    z-index: 10;
+}
+#f1 img{
+    height: 40%;
+    width: 50%;
+    padding: 1vw;
+    object-fit: cover;
+    background-color: red;
+}
+#f2 h3{
+    font-size: 2vw;
+    font-weight: 850;
+    white-space: nowrap;
+}
+#f3 h3{
+    font-size: 2vw;
+    font-weight: 850;
+    white-space: nowrap;
+
+}
+/*FOOTER END*/

@@ -361,15 +361,21 @@ video {
     position: absolute;
     z-index: 10;
     transition: all ease 0.5s;
+    
 }
 .label img{
     height: 100%;
     width:100%;
     object-fit: cover;
+    transition: all ease 0.5s; /*for image to pop up*/
+    scale: 1.1;   /*for image to pop up*/
 }
 .label:hover h3{
     background-color: transparent;
     color: #000;
+}
+.label:hover img{
+    scale: 1;
 }
 
 /*LABEL END*/

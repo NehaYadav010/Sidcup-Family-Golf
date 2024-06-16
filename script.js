@@ -129,3 +129,33 @@ gsap.from("#labels h1",{
         scrub:3
     }
 })
+// CURSOR ANIMATIONS ON FOOTER
+
+var icon = document.querySelectorAll("#f1 i")
+icon.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        crs.style.scale = 2.5;
+        crs.style.backgroundColor = "transparent";
+        crs.style.border = "1px solid #fff"
+    });
+    elem.addEventListener("mouseleave",function(){
+        crs.style.scale = 1;
+        crs.style.backgroundColor = "#95C11E";
+        crs.style.border = "none";
+    })
+})
+
+var head = document.querySelectorAll(".foot h3")
+head.forEach(function(elem){
+    elem.addEventListener("mouseenter", function(){
+        crs.style.scale = 2;
+        crs.style.backgroundColor = "transparent";
+        crs.style.border = "1px solid #fff";
+    });
+    elem.addEventListener("mouseleave",function(){
+        crs.style.scale = 1;
+        crs.style.backgroundColor = "#95C11E";
+        crs.style.border = "none";
+    })
+})
+

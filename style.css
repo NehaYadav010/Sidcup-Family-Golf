@@ -387,27 +387,25 @@ video {
     gap: 2vw;
     padding: 4vw;
 }
-/* #footer img{
-    height: 30%;
-    width: 30%;
-    object-fit: cover;
-    position: relative;
-    z-index: 9;
-} */
 .foot{
     height: 70%;
     width: 100%;
-    background-color: orange;
-    padding: 1vw;
     position: relative;
     z-index: 10;
 }
 #f1 img{
-    height: 40%;
-    width: 50%;
+    height: 80%;
     padding: 1vw;
     object-fit: cover;
-    background-color: red;
+    margin-bottom: 3vw;
+    transition: all ease 0.5s;
+}
+#f1 img:hover{
+    scale:0.9
+}
+#f1 i{
+    font-size: 3vw;
+    transition: all ease 1s;
 }
 #f2 h3{
     font-size: 2vw;
@@ -417,6 +415,15 @@ video {
 #f3 h3{
     font-size: 2vw;
     font-weight: 850;
+    white-space: nowrap;
+}
+.foot h3:hover{
+    color:white;
+    transition: all ease 0.4s;
+}
+#f4 span{
+    font-size: 1.6vw;
+    font-weight: 800;
     white-space: nowrap;
 
 }

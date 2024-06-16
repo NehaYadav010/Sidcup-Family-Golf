@@ -321,7 +321,7 @@ video {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-color: red;
+    /* background-color: red; */
 }
 #labels h1{
     font-size: 5.5vw;
@@ -337,7 +337,7 @@ video {
     gap: 1vw;
     position: relative;
     top: -11%;
-    background-color: #2AA635;
+    /* background-color: #2AA635; */
 }
 .label{ /*  .elem */
     width: 100%;
@@ -346,11 +346,12 @@ video {
     border-radius: 1vw;
     position: relative;
     overflow: hidden;
+    z-index: 10;
 }
 .label h3{
     height: 100%;
     width: 100%;
-    background-color: rgb(110, 64, 64);
+    background-color: #95C11E;
     color: #fff;
     display: flex;
     align-items: center;

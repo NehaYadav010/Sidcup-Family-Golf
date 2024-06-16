@@ -93,3 +93,28 @@ gsap.from(".card",{
         scrub:3
     }
 })
+// GSAP FOR COLON
+gsap.from("#colon1",{
+    x:-70,
+    y:-70,
+    scrollTrigger:{
+        trigger:"#colon1",
+        scroller: "body",
+        markers:true,
+        start: "top 40%",
+        end:"top 30%",
+        scrub:4
+    }
+})
+gsap.from("#colon2",{
+    x:70,
+    y:70,
+    scrollTrigger:{
+        trigger:"#colon1",
+        scroller: "body",
+        markers:true,
+        start: "bottom 40%",
+        end:"bottom 30%",
+        scrub:4
+    }
+})

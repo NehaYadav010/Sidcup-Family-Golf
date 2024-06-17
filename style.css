@@ -83,6 +83,33 @@ video {
     margin-top: 1vw;
     line-height: 2vw;
 }
+#page1 #arrow{
+    height: 10vw;
+    width: 10vw;
+    background-color: transparent;
+    border: 1px solid #ABDE23;
+    position: absolute;
+    bottom: 0%;
+    left: -2%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+#page1 #arrow:hover{
+    height: 4vw;
+    width: 4vw;
+    background-color: #ABDE23;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+#page1 #arrow i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: 740;
+}
 /*CURSOR*/
 #cursor{
     height: 25px;

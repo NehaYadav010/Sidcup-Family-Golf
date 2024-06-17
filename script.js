@@ -5,7 +5,7 @@ gsap.to("#nav",{
     scrollTrigger: {
         trigger: "#nav",
         scroller: "body",
-        markers: true, 
+        // markers: true, 
         start: "top -10%",
         end: "top -11%",
         scrub:1
@@ -17,7 +17,7 @@ gsap.to("#main",{
     scrollTrigger:{
         trigger: "#main",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top -30%",
         end: "top -80vh",
         scrub:3
@@ -71,7 +71,7 @@ gsap.from("#about-us img,#abt",{
     scrollTrigger:{
         trigger:"#about-us",
         scroller:"body",
-        markers: true,
+        // markers: true,
         start:"top 60%",
         end:"top 58%",
         scrub:3
@@ -87,7 +87,7 @@ gsap.from(".card",{
     scrollTrigger:{
         trigger:".card",
         scroller:"body",
-        markers: true,
+        // markers: true,
         start:"top 70%",
         end:"top 58%",
         scrub:3
@@ -100,7 +100,7 @@ gsap.from("#colon1",{
     scrollTrigger:{
         trigger:"#colon1",
         scroller: "body",
-        markers:true,
+        // markers:true,
         start: "top 40%",
         end:"top 30%",
         scrub:4
@@ -112,7 +112,7 @@ gsap.from("#colon2",{
     scrollTrigger:{
         trigger:"#colon1",
         scroller: "body",
-        markers:true,
+        // markers:true,
         start: "bottom 40%",
         end:"bottom 30%",
         scrub:4

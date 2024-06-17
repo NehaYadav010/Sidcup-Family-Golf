@@ -159,3 +159,15 @@ head.forEach(function(elem){
     })
 })
 
+// ARROW - CURSOR ANIMATION CREATED
+var arrow = document.querySelector("#page1 #arrow")
+arrow.addEventListener("mouseover",()=> {
+    crs.style.scale = 2;
+    crs.style.border = "1px solid #fff";
+    crs.style.backgroundColor = "transparent";
+})
+arrow.addEventListener("mouseleave",()=> {
+    crs.style.scale = 1;
+    crs.style.border = "none";
+    crs.style.backgroundColor = "#95C11E";
+})

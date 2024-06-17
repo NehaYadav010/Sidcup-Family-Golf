@@ -202,7 +202,6 @@ video {
     text-align: center;
     padding: 6vw 4vw;
     color: #fff;
-    /* background-color: rgb(217, 124, 124); */
 }
 #about-us h1 {
     font-weight: 900;
@@ -399,7 +398,6 @@ video {
     position: absolute;
     z-index: 10;
     transition: all ease 0.5s;
-    
 }
 .label img{
     height: 100%;

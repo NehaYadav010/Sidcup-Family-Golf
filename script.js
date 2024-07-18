@@ -171,3 +171,6 @@ arrow.addEventListener("mouseleave",()=> {
     crs.style.border = "none";
     crs.style.backgroundColor = "#95C11E";
 })
+
+
+/* Navigation bar responsive */
